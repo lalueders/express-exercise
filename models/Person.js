@@ -3,8 +3,8 @@ const { Schema, model } = mongoose;
 
 const schema = new Schema(
   {
-    text: { type: String, required: true },
-    author: { type: Schema.Types.ObjectId, ref: 'Person', required: true },
+    name: { type: String, required: true },
+    email: { type: String, required: true },
   },
   {
     versionKey: false,
@@ -12,4 +12,4 @@ const schema = new Schema(
   }
 );
 
-export default model('Joke', schema);
+export default model('Person', schema);

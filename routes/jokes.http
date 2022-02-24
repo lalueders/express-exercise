@@ -1,0 +1,26 @@
+
+GET http://localhost:3333/jokes/
+###
+
+GET http://localhost:3333/jokes/62177239037cb23c86a0bf6c
+###
+###
+
+POST http://localhost:3333/jokes/
+Content-Type: application/json
+
+{
+"text": "This is a funny joke!",
+"author": "6217baa8c6a940f20dc7519c"
+}
+###
+
+PATCH http://localhost:3333/jokes/62179c8adfc78a70beabdb14
+Content-Type: application/json
+
+{
+"text": "This is changed again"
+}
+###
+
+DELETE http://localhost:3333/jokes/6217abb990007aa335bd05f2
